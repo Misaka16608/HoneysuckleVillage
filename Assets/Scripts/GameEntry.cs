@@ -1,12 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using HoneysuckleVillage.Games;
 
-public class GameEntry : MonoBehaviour
+namespace HoneysuckleVillage
 {
-    private Game game;
-    private void Awake()
+    public class GameEntry : MonoBehaviour
     {
-        game = Game.Instance;
+        private Game game;
+        private void Awake()
+        {
+            game = Game.Instance;
+        }
     }
 }
+
